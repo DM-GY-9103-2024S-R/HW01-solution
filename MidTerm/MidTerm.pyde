@@ -8,7 +8,6 @@ def drawTarget(x, y, r, g, b):
     ellipse(x, y, 100, 100)
 
 def draw():
-    global x, y, r, g, b
     background(255)
     for i in range(0, 10, 1):
         x = 200 + cos(i * 0.15 + frameCount * 0.05) * 150

@@ -4,7 +4,6 @@ SUN_X = 56
 
 obj_flowerpetal = []
 obj_flowerstem = []
-breezeangle = 5
 
 class flowerstem:
     def __init__(self, xx, yy):
@@ -82,7 +81,6 @@ def setup():
 
 
 def draw():
-    global breezeangle
     background(200, 95, 80)
 
     #create sun
@@ -103,7 +101,6 @@ def draw():
         fs.move()
         fs.display()
 
-    breezeangle += 0.1
 
 def mousePressed():
     del obj_flowerpetal[:]

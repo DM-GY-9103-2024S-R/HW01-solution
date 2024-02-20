@@ -22,11 +22,13 @@ class Particle:
 def setup():
     size(600, 600)
     noStroke()
+
     for i in range(0, NUM_PARTICLES):
         mPs.append(Particle())
 
 def draw():
     background(0, 10)
+
     for p in mPs:
         p.update()
         p.show()
